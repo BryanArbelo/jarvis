@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:unit": "mocha ./tests/unit.spec.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/BryanArbelo/jarvis/issues"
   },
-  "homepage": "https://github.com/BryanArbelo/jarvis#readme"
+  "homepage": "https://github.com/BryanArbelo/jarvis#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
 }
