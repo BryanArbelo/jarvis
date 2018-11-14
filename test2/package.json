@@ -1,0 +1,21 @@
+{
+  "name": "test2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:unit": "mocha ./tests/unit.spec.js",
+    "test:endtoend": "mocha ./tests/endToEnd.spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "csvtojson": "^2.0.8",
+    "dotenv": "^6.1.0",
+    "mocha": "^5.2.0",
+    "nock": "^10.0.2",
+    "node-fetch": "^2.3.0",
+    "pg": "^7.6.1"
+  }
+}

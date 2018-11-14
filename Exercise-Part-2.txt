@@ -1,0 +1,32 @@
+Duration: approx 120 minutes
+
+Write a simple batch job that retrieves a CSV file from a URL, then imports requests into a database. 
+Assume there is an existing collection/table of clients and requests. 
+Ensure that the client ID exists in the database before importing the request, otherwise skip the import for the request.
+Ensure there is adequate unit, end to end and performance testing
+
+Note:
+Timebox it!
+Please use version control, preferably git. 
+Add your approach to testing.
+Ensure the batch can handle files of varying sizes without having to scale vertically.
+
+Language:
+node.js (plus any library or frameworks that you are comfortable with)
+
+Database:
+Postgres
+
+
+
+
+CSV header with a sample input (1 order per line): orderId,clientId,requests,duration
+sample-123,client-321,House Cleaning,2
+
+Table/Collection schema:
+Clients 
+clientId (String) firstName (String) lastName (String)
+
+Orders 
+orderId (String) clientId (String) request (String) duration (Number)
+
